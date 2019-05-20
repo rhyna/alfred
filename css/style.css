@@ -1,0 +1,186 @@
+* {
+    position: relative;
+    box-sizing: border-box;
+    border: 0;
+    padding: 0;
+    margin: 0;
+    font-family: "PT Sans";
+    font-size: 16px;
+    color: #666;
+}
+
+body,html{
+    height: 100%;
+}
+
+.app {
+    width: 350px;
+    padding: 20px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.flatpickr-calendar.open {
+    width: 310px;
+}
+
+.app-top-panel{
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+.app-date-input{
+    margin-right: 10px;
+    width: auto;
+    flex-grow: 1;
+}
+
+.app-date-input__input{
+    padding: 10px;
+    line-height: 1.5em;
+    font-size: 16px;
+    width: 100%;
+    border: 1px solid #666;
+    text-align: left;
+    border-radius: 3px;
+}
+
+.app-add-icon-container{
+    margin-left: auto;
+}
+
+.app-add-icon{
+    background: #60af23;
+    color: #fff;
+    border-radius: 3px;
+    padding: 5px 7px;
+    cursor: pointer;
+    font-size: 21px;
+    width: 46px;
+    height: 46px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.app-list {
+    padding: 20px 0;
+    width: 100%;
+    flex-grow: 1;
+}
+
+.app-list-item {
+    display: flex;
+    align-items: flex-start;
+    padding: 5px 0;
+}
+
+.app-list-item__time {
+    font-weight: bold;
+    padding-right: 10px;
+    width: 50px;
+}
+
+.app-list-item__text {
+    flex-grow: 1;
+}
+
+.app-list-item__checkbox {
+    padding-right: 10px;
+}
+
+.app-list-item__checkbox input {
+    vertical-align: middle;
+}
+
+.app-list-item__text--completed {
+    text-decoration: line-through;
+}
+
+.app-list-item__text--overdue {
+    font-weight: bold;
+    color: #d21717;
+}
+
+.app-list-item__delete-icon-container,
+.app-list-item__edit-icon-container,
+.app-list-item__transfer-icon-container {
+    padding-left: 10px;
+}
+
+.app-list-item__delete-icon,
+.app-list-item__edit-icon,
+.app-list-item__transfer-icon {
+    color: #666;
+    cursor: pointer;
+}
+
+.popup {
+    width: 350px;
+    padding: 20px;
+    background: #fff;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    text-align: center;
+    border-radius: 3px;
+}
+
+.popup input {
+    padding: 10px;
+    line-height: 1.5em;
+    font-size: 16px;
+    width: 100%;
+    border: 1px solid #666;
+    text-align: left;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    border-radius: 3px;
+}
+
+.popup button {
+    background: #60af23;
+    font-size: 16px;
+    padding: 10px;
+    padding-top: 7px;
+    border-radius: 3px;
+    color: #fff;
+    cursor: pointer;
+}
+
+.popup__cross {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+.popup__cross-icon {
+  font-size: 18px;
+  color: #666666b5;
+  cursor: pointer;
+}
+
+.popup-under-layer {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: #000;
+    opacity: 0.2;
+    z-index: 1;
+}
+
+@media (min-width: 320px) and (max-width: 500px) {
+    .app {
+        width: 100%;
+    }
+
+    .popup {
+        width: 280px;
+    }
+}

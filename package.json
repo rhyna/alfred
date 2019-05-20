@@ -1,0 +1,19 @@
+{
+  "name": "rhyna-classes",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "ts-loader": "^5.3.3",
+    "typescript": "^3.3.3333",
+    "webpack": "^4.26.0",
+    "webpack-cli": "^3.1.2"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "watch": "webpack -w --config webpack.config.js",
+    "build": "webpack --config webpack.config.js"
+  },
+  "author": "rhyna",
+  "license": "ISC"
+}
